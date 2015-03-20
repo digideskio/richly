@@ -19,7 +19,7 @@
   <% end %>
 </div>
 
-<% if @link.user == current_user -%>
+<% if @link.user == current_user %>
   <div class="btn-group">
     <%= link_to 'Edit', edit_link_path(@link), class: "btn btn-default" %>
     <%= link_to 'Destroy', @link, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default" %>
