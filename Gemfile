@@ -7,6 +7,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'bootstrap-sass', '~> 3.2.0.2'
+gem 'omniauth-twitter'
 
 gem 'rails_12factor', group: :production
 
@@ -20,6 +21,7 @@ gem 'devise'
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'dotenv-rails'
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'

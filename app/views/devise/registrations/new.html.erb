@@ -13,15 +13,17 @@
       <%= f.email_field :email, autofocus: true, class: "form-control", required: true %>
     </div>
 
-    <div class="form-group">
-      <%= f.label :password %>
-      <%= f.password_field :password, class: "form-control", required: true %>
-    </div>
+    <% if f.object.password_required? %>
+      <div class="form-group">
+        <%= f.label :password %>
+        <%= f.password_field :password, class: "form-control", required: true %>
+      </div>
 
-    <div class="form-group">
-      <%= f.label :password_confirmation %>
-      <%= f.password_field :password_confirmation, class: "form-control", required: true %>
-    </div>
+      <div class="form-group">
+        <%= f.label :password_confirmation %>
+        <%= f.password_field :password_confirmation, class: "form-control", required: true %>
+      </div>
+    <% end %>
 
     <div class="form-group">
       <%= f.submit "Sign up", class: "btn btn-lg btn-primary" %>
