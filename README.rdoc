@@ -1,3 +1,0 @@
-Richly is a link aggregator site, like Reddit or Hacker News.
-
-Built with Ruby on Rails
